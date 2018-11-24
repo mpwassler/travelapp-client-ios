@@ -8,8 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A74A44FC21A5E4C400AC36C0 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A44FB21A5E4C400AC36C0 /* Settings.swift */; };
+		A74A44FE21A8694A00AC36C0 /* Http.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A44FD21A8694A00AC36C0 /* Http.swift */; };
+		A74A450021A894CB00AC36C0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A44FF21A894CB00AC36C0 /* SignUpViewController.swift */; };
+		A74A450221A8C1EE00AC36C0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450121A8C1EE00AC36C0 /* ProfileViewController.swift */; };
+		A74A450421A91DC900AC36C0 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450321A91DC900AC36C0 /* MainNavViewController.swift */; };
+		A74A450621A9202700AC36C0 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450521A9202700AC36C0 /* Auth.swift */; };
+		A74A450821A9225600AC36C0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450721A9225600AC36C0 /* Trip.swift */; };
 		A785F06621A3BCA50096021D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06521A3BCA50096021D /* AppDelegate.swift */; };
-		A785F06821A3BCA50096021D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06721A3BCA50096021D /* ViewController.swift */; };
+		A785F06821A3BCA50096021D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06721A3BCA50096021D /* SignInViewController.swift */; };
 		A785F06B21A3BCA50096021D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A785F06921A3BCA50096021D /* Main.storyboard */; };
 		A785F06D21A3BCA70096021D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A785F06C21A3BCA70096021D /* Assets.xcassets */; };
 		A785F07021A3BCA70096021D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A785F06E21A3BCA70096021D /* LaunchScreen.storyboard */; };
@@ -39,9 +45,15 @@
 /* Begin PBXFileReference section */
 		00EDD602159F191B3CE5E257 /* Pods_travelapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_travelapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74A44FB21A5E4C400AC36C0 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A74A44FD21A8694A00AC36C0 /* Http.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Http.swift; sourceTree = "<group>"; };
+		A74A44FF21A894CB00AC36C0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A74A450121A8C1EE00AC36C0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A74A450321A91DC900AC36C0 /* MainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
+		A74A450521A9202700AC36C0 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		A74A450721A9225600AC36C0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		A785F06221A3BCA50096021D /* travelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A785F06521A3BCA50096021D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A785F06721A3BCA50096021D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A785F06721A3BCA50096021D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		A785F06A21A3BCA50096021D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A785F06C21A3BCA70096021D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A785F06F21A3BCA70096021D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,7 +133,6 @@
 				A785F09421A3C3350096021D /* models */,
 				A785F09321A3C3280096021D /* services */,
 				A785F06521A3BCA50096021D /* AppDelegate.swift */,
-				A785F06721A3BCA50096021D /* ViewController.swift */,
 				A785F06921A3BCA50096021D /* Main.storyboard */,
 				A785F06C21A3BCA70096021D /* Assets.xcassets */,
 				A785F06E21A3BCA70096021D /* LaunchScreen.storyboard */,
@@ -152,6 +163,8 @@
 		A785F09321A3C3280096021D /* services */ = {
 			isa = PBXGroup;
 			children = (
+				A74A44FD21A8694A00AC36C0 /* Http.swift */,
+				A74A450521A9202700AC36C0 /* Auth.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -160,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				A785F09721A5C8950096021D /* User.swift */,
+				A74A450721A9225600AC36C0 /* Trip.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -167,6 +181,10 @@
 		A785F09521A3C3520096021D /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A785F06721A3BCA50096021D /* SignInViewController.swift */,
+				A74A44FF21A894CB00AC36C0 /* SignUpViewController.swift */,
+				A74A450121A8C1EE00AC36C0 /* ProfileViewController.swift */,
+				A74A450321A91DC900AC36C0 /* MainNavViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -371,10 +389,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A785F06821A3BCA50096021D /* ViewController.swift in Sources */,
+				A74A450821A9225600AC36C0 /* Trip.swift in Sources */,
+				A74A450021A894CB00AC36C0 /* SignUpViewController.swift in Sources */,
+				A785F06821A3BCA50096021D /* SignInViewController.swift in Sources */,
 				A785F06621A3BCA50096021D /* AppDelegate.swift in Sources */,
 				A74A44FC21A5E4C400AC36C0 /* Settings.swift in Sources */,
+				A74A450221A8C1EE00AC36C0 /* ProfileViewController.swift in Sources */,
 				A785F09821A5C8950096021D /* User.swift in Sources */,
+				A74A44FE21A8694A00AC36C0 /* Http.swift in Sources */,
+				A74A450421A91DC900AC36C0 /* MainNavViewController.swift in Sources */,
+				A74A450621A9202700AC36C0 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,5 @@
 import Foundation
 
 struct Settings {
-    var apiUrl = "http://localhost:8000/api/v1"
+    static var apiUrl = "http://localhost:8000/api/v1"
 }
