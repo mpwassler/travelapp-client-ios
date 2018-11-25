@@ -1,24 +1,41 @@
 PODS:
   - Alamofire (4.7.3)
+  - Mapbox-iOS-SDK (4.6.0)
+  - SwiftEventBus (3.0.1)
   - SwiftKeychainWrapper (3.0.1)
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Mapbox-iOS-SDK (~> 4.6)
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `3.0.1`)
   - SwiftKeychainWrapper
   - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Mapbox-iOS-SDK
     - SwiftKeychainWrapper
     - SwiftyJSON
 
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 3.0.1
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 3.0.1
+
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Mapbox-iOS-SDK: 204c04713477cf2a88c52c5a8eed1790eb75a02a
+  SwiftEventBus: 87ccaeceff91b748775e37751ae3a81ec815b3d5
   SwiftKeychainWrapper: 38952a3636320ae61bad3513cadd870929de7a4a
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 60fe4fe3bb1ca48fcde783800d8936f5cc5a19ec
+PODFILE CHECKSUM: b572f789c7c380f47a9bdf20f4b0da2055cba5a8
 
 COCOAPODS: 1.5.3

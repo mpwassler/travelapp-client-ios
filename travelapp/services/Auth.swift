@@ -9,8 +9,15 @@
 import Foundation
 import Alamofire
 import SwiftKeychainWrapper
+import SwiftEventBus
 
 class Auth {
+    public var user : User?
+    
+    static let instance = Auth()
+    
+    private init() {}
+    
     static func create(username: String, email: String, password: String, passwordConfirm: String, completed: @escaping (User?, Error?) -> Void) {
         let parameters: Parameters = [
             "username": username,
@@ -29,6 +36,7 @@ class Auth {
                 id:json["user"]["pk"].intValue,
                 token: json["token"].stringValue
             )
+            Auth.instance.user = user
             completed(user, nil)
         }
     }
@@ -46,8 +54,15 @@ class Auth {
                 id:json["user"]["pk"].intValue,
                 token: json["token"].stringValue
             )
+            Auth.instance.user = user
             completed(user, nil)
         }
+    }
+    
+    static func logout() {
+        Auth.instance.user = nil
+        KeychainWrapper.standard.removeObject(forKey: "Auth_Token")
+        SwiftEventBus.post("AUTH_LOGOUT")
     }
     
     
@@ -59,6 +74,7 @@ class Auth {
     
     static func token() -> String? {
         if let token = KeychainWrapper.standard.string(forKey: "Auth_Token")  {
+            print(token)
             return token
         }
         return nil

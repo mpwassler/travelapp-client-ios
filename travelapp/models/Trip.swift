@@ -9,5 +9,36 @@
 import Foundation
 
 class Trip {
+    var title: String
+    var description: String
     
+    init(title: String, description: String) {
+        self.title = title
+        self.description = description
+    }
+    
+    func places() {}
+    
+    func media() {}
+    
+    static func find(id: Int) {
+        
+    }
+    
+    static func all(completed: @escaping ([Trip]?, Error?) -> Void) {
+        Http.GET(url: "\(Settings.apiUrl)/trips/") {
+            json, error in
+            var trips: [Trip] = []
+            for tripData in json.arrayValue {
+                print(tripData)
+                trips += [
+                    Trip(
+                        title: tripData["title"].stringValue,
+                        description: tripData["description"].stringValue
+                    )
+                ]
+            }
+            completed(trips, nil)
+        }
+    }
 }

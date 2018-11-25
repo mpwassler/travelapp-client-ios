@@ -10,7 +10,10 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet weak var profileLabel: UILabel!
+    
     var user: User? = nil
+    var trips: [Trip] = []
     
     func setUser(user: User) {
         self.user = user
@@ -24,7 +27,12 @@ class ProfileViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if let u = user {
-            
+            self.profileLabel.text = "Welcome \(u.username)"
+            Trip.all { trips, err in
+                if let t = trips {
+                    self.trips = t
+                }
+            }
         }
     }
     

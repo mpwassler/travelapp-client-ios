@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftEventBus
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        SwiftEventBus.onMainThread(target as AnyObject, name: "AUTH_LOGOUT") { result in
+            let storyboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            var signin = storyboard.instantiateViewController(withIdentifier: "signin") as! SignInViewController
+            signin.view.frame = (self.window!.frame)
+            self.window!.addSubview(signin.view)
+            self.window!.bringSubviewToFront(signin.view)
+        }
         return true
     }
 
