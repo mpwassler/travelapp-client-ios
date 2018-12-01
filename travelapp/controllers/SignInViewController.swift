@@ -25,8 +25,7 @@ class SignInViewController: UIViewController {
             Auth.login(username: un, password: pw) { user, err in
                 if let u = user {
                     let viewController =  self.storyboard?.instantiateViewController(withIdentifier: "mainnav") as! UITabBarController
-                    let profileController =  viewController.viewControllers![0] as! ProfileViewController
-                    profileController.setUser(user: u)
+                   
                     self.present(viewController, animated: true, completion: nil)
                 }
             }

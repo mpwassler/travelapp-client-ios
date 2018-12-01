@@ -14,6 +14,11 @@
 		A74A450421A91DC900AC36C0 /* MainNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450321A91DC900AC36C0 /* MainNavViewController.swift */; };
 		A74A450621A9202700AC36C0 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450521A9202700AC36C0 /* Auth.swift */; };
 		A74A450821A9225600AC36C0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450721A9225600AC36C0 /* Trip.swift */; };
+		A74A450A21AB46AA00AC36C0 /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450921AB46AA00AC36C0 /* ProfileCollectionViewCell.swift */; };
+		A74A450C21AB815A00AC36C0 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A450B21AB815A00AC36C0 /* Place.swift */; };
+		A7685C9121ACA70C00C0836C /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9021ACA70C00C0836C /* AddTripViewController.swift */; };
+		A7685C9321AF6FC100C0836C /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9221AF6FC100C0836C /* TripDetailViewController.swift */; };
+		A7685C9521B09A2500C0836C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9421B09A2500C0836C /* CameraViewController.swift */; };
 		A785F06621A3BCA50096021D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06521A3BCA50096021D /* AppDelegate.swift */; };
 		A785F06821A3BCA50096021D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06721A3BCA50096021D /* SignInViewController.swift */; };
 		A785F06B21A3BCA50096021D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A785F06921A3BCA50096021D /* Main.storyboard */; };
@@ -51,6 +56,11 @@
 		A74A450321A91DC900AC36C0 /* MainNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavViewController.swift; sourceTree = "<group>"; };
 		A74A450521A9202700AC36C0 /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 		A74A450721A9225600AC36C0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		A74A450921AB46AA00AC36C0 /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
+		A74A450B21AB815A00AC36C0 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		A7685C9021ACA70C00C0836C /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
+		A7685C9221AF6FC100C0836C /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
+		A7685C9421B09A2500C0836C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		A785F06221A3BCA50096021D /* travelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A785F06521A3BCA50096021D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A785F06721A3BCA50096021D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +184,7 @@
 			children = (
 				A785F09721A5C8950096021D /* User.swift */,
 				A74A450721A9225600AC36C0 /* Trip.swift */,
+				A74A450B21AB815A00AC36C0 /* Place.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -185,6 +196,9 @@
 				A74A44FF21A894CB00AC36C0 /* SignUpViewController.swift */,
 				A74A450121A8C1EE00AC36C0 /* ProfileViewController.swift */,
 				A74A450321A91DC900AC36C0 /* MainNavViewController.swift */,
+				A7685C9021ACA70C00C0836C /* AddTripViewController.swift */,
+				A7685C9221AF6FC100C0836C /* TripDetailViewController.swift */,
+				A7685C9421B09A2500C0836C /* CameraViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -192,6 +206,7 @@
 		A785F09621A3C39B0096021D /* views */ = {
 			isa = PBXGroup;
 			children = (
+				A74A450921AB46AA00AC36C0 /* ProfileCollectionViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -395,13 +410,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7685C9121ACA70C00C0836C /* AddTripViewController.swift in Sources */,
 				A74A450821A9225600AC36C0 /* Trip.swift in Sources */,
 				A74A450021A894CB00AC36C0 /* SignUpViewController.swift in Sources */,
 				A785F06821A3BCA50096021D /* SignInViewController.swift in Sources */,
+				A74A450C21AB815A00AC36C0 /* Place.swift in Sources */,
+				A74A450A21AB46AA00AC36C0 /* ProfileCollectionViewCell.swift in Sources */,
 				A785F06621A3BCA50096021D /* AppDelegate.swift in Sources */,
 				A74A44FC21A5E4C400AC36C0 /* Settings.swift in Sources */,
+				A7685C9321AF6FC100C0836C /* TripDetailViewController.swift in Sources */,
 				A74A450221A8C1EE00AC36C0 /* ProfileViewController.swift in Sources */,
 				A785F09821A5C8950096021D /* User.swift in Sources */,
+				A7685C9521B09A2500C0836C /* CameraViewController.swift in Sources */,
 				A74A44FE21A8694A00AC36C0 /* Http.swift in Sources */,
 				A74A450421A91DC900AC36C0 /* MainNavViewController.swift in Sources */,
 				A74A450621A9202700AC36C0 /* Auth.swift in Sources */,
@@ -581,6 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D4839CW39;
 				INFOPLIST_FILE = travelapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -599,6 +620,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D4839CW39;
 				INFOPLIST_FILE = travelapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
