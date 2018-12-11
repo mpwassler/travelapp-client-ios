@@ -19,6 +19,7 @@
 		A7685C9121ACA70C00C0836C /* AddTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9021ACA70C00C0836C /* AddTripViewController.swift */; };
 		A7685C9321AF6FC100C0836C /* TripDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9221AF6FC100C0836C /* TripDetailViewController.swift */; };
 		A7685C9521B09A2500C0836C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9421B09A2500C0836C /* CameraViewController.swift */; };
+		A7685C9821B3190300C0836C /* MediaPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7685C9721B3190300C0836C /* MediaPreviewViewController.swift */; };
 		A785F06621A3BCA50096021D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06521A3BCA50096021D /* AppDelegate.swift */; };
 		A785F06821A3BCA50096021D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F06721A3BCA50096021D /* SignInViewController.swift */; };
 		A785F06B21A3BCA50096021D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A785F06921A3BCA50096021D /* Main.storyboard */; };
@@ -27,6 +28,9 @@
 		A785F07B21A3BCA70096021D /* travelappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F07A21A3BCA70096021D /* travelappTests.swift */; };
 		A785F08621A3BCA70096021D /* travelappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F08521A3BCA70096021D /* travelappUITests.swift */; };
 		A785F09821A5C8950096021D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A785F09721A5C8950096021D /* User.swift */; };
+		A7A1478821BF379D00CB2692 /* MediaFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1478721BF379D00CB2692 /* MediaFile.swift */; };
+		A7A1478A21BF37D600CB2692 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1478921BF37D600CB2692 /* Video.swift */; };
+		A7A1478C21BF37E100CB2692 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1478B21BF37E100CB2692 /* Image.swift */; };
 		D623A6EB65463D161A8FA927 /* Pods_travelapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00EDD602159F191B3CE5E257 /* Pods_travelapp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,7 @@
 		A7685C9021ACA70C00C0836C /* AddTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewController.swift; sourceTree = "<group>"; };
 		A7685C9221AF6FC100C0836C /* TripDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailViewController.swift; sourceTree = "<group>"; };
 		A7685C9421B09A2500C0836C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		A7685C9721B3190300C0836C /* MediaPreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPreviewViewController.swift; sourceTree = "<group>"; };
 		A785F06221A3BCA50096021D /* travelapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A785F06521A3BCA50096021D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A785F06721A3BCA50096021D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +80,9 @@
 		A785F08521A3BCA70096021D /* travelappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = travelappUITests.swift; sourceTree = "<group>"; };
 		A785F08721A3BCA70096021D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A785F09721A5C8950096021D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A7A1478721BF379D00CB2692 /* MediaFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaFile.swift; sourceTree = "<group>"; };
+		A7A1478921BF37D600CB2692 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		A7A1478B21BF37E100CB2692 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		BBBE2E08A6E3313B40CABA57 /* Pods-travelapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-travelapp/Pods-travelapp.debug.xcconfig"; sourceTree = "<group>"; };
 		D865B89910B64F19CC0EC8D0 /* Pods-travelapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-travelapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-travelapp/Pods-travelapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -113,6 +121,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A7685C9621B310E500C0836C /* camera */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1478621BF378000CB2692 /* models */,
+				A7685C9421B09A2500C0836C /* CameraViewController.swift */,
+				A7685C9721B3190300C0836C /* MediaPreviewViewController.swift */,
+			);
+			path = camera;
+			sourceTree = "<group>";
+		};
 		A785F05921A3BCA50096021D = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +156,7 @@
 		A785F06421A3BCA50096021D /* travelapp */ = {
 			isa = PBXGroup;
 			children = (
+				A7685C9621B310E500C0836C /* camera */,
 				A785F09621A3C39B0096021D /* views */,
 				A785F09521A3C3520096021D /* controllers */,
 				A785F09421A3C3350096021D /* models */,
@@ -198,7 +217,6 @@
 				A74A450321A91DC900AC36C0 /* MainNavViewController.swift */,
 				A7685C9021ACA70C00C0836C /* AddTripViewController.swift */,
 				A7685C9221AF6FC100C0836C /* TripDetailViewController.swift */,
-				A7685C9421B09A2500C0836C /* CameraViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -209,6 +227,16 @@
 				A74A450921AB46AA00AC36C0 /* ProfileCollectionViewCell.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		A7A1478621BF378000CB2692 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1478721BF379D00CB2692 /* MediaFile.swift */,
+				A7A1478921BF37D600CB2692 /* Video.swift */,
+				A7A1478B21BF37E100CB2692 /* Image.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		F51D98111A5915DD7364059F /* Pods */ = {
@@ -418,9 +446,13 @@
 				A74A450A21AB46AA00AC36C0 /* ProfileCollectionViewCell.swift in Sources */,
 				A785F06621A3BCA50096021D /* AppDelegate.swift in Sources */,
 				A74A44FC21A5E4C400AC36C0 /* Settings.swift in Sources */,
+				A7685C9821B3190300C0836C /* MediaPreviewViewController.swift in Sources */,
 				A7685C9321AF6FC100C0836C /* TripDetailViewController.swift in Sources */,
 				A74A450221A8C1EE00AC36C0 /* ProfileViewController.swift in Sources */,
+				A7A1478821BF379D00CB2692 /* MediaFile.swift in Sources */,
 				A785F09821A5C8950096021D /* User.swift in Sources */,
+				A7A1478C21BF37E100CB2692 /* Image.swift in Sources */,
+				A7A1478A21BF37D600CB2692 /* Video.swift in Sources */,
 				A7685C9521B09A2500C0836C /* CameraViewController.swift in Sources */,
 				A74A44FE21A8694A00AC36C0 /* Http.swift in Sources */,
 				A74A450421A91DC900AC36C0 /* MainNavViewController.swift in Sources */,
